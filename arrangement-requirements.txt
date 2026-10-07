@@ -1,0 +1,4 @@
+pandas>=2,<4
+pretty-midi>=0.2.10,<0.3
+tensorboard>=2,<3
+openpyxl>=3,<4

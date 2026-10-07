@@ -1,0 +1,11 @@
+diff --git a/chorderator/utils/pipeline.py b/chorderator/utils/pipeline.py
+--- a/chorderator/utils/pipeline.py
++++ b/chorderator/utils/pipeline.py
+@@ -62,6 +62,6 @@ class Pipeline:
+             self.final_output = self.__add_textures(self.chord_gen_output, self.final_output_log, **kwargs)
+             self.__shift_note(self.final_output.instruments[1], kwargs['note_shift'], self.meta['tempo'])
+         else:
+-            self.final_output = self.__add_textures(self.chord_gen_output, do_add_textures=False, **kwargs)
++            self.final_output = self.__add_textures(self.chord_gen_output, self.final_output_log, do_add_textures=False, **kwargs)
+         self.state = 5
+         Logging.warning('All process finished!')

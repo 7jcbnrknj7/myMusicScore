@@ -1,0 +1,3 @@
+[submodule "tools/AccoMontage2"]
+	path = tools/AccoMontage2
+	url = https://github.com/billyblu2000/AccoMontage2.git
