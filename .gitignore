@@ -1,0 +1,31 @@
+# Local environments and credentials
+.venv/
+.separator-venv/
+.arrangement-venv/
+settings.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Personal media, scores, model caches and runtime diagnostics
+library/
+exports/
+models/
+work/
+trash/
+Data Files/
+*.lnk
+*.log
+*.dmp
+*.mdmp
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+
+# Third-party installations; AccoMontage2 is tracked as a gitlink only.
+tools/*
+!tools/AccoMontage2/
