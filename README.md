@@ -1,3 +1,5 @@
+[简体中文](README.md) | [日本語](README.ja.md) | [English](README.en.md)
+
 # MusicScore v1 个人曲谱客户端
 
 Windows 本地应用：MuScriptor 转录、曲谱库、移调、音符编辑、钢琴/吉他和弦标记、试听及 MuseScore 编辑。
@@ -52,11 +54,11 @@ PyTorch 的 GPU 版本需根据显卡和 CUDA 兼容性单独选择；默认依�
 
 默认本机端口为 `8765`；端口已占用时选择后续空闲端口。服务仅监听 `127.0.0.1`，不向局域网开放。Hugging Face 许可页面等外部链接仍在默认浏览器打开。
 
-应用安装在 `G:\codex\MusicScore`。Windows 凭据服务名称仍保留 `ScoreDesk`，避免丢失已有 API 密钥。`CreateShortcut.ps1` 可重新生成启动快捷方式；之后若移动安装目录，需要重新修复运行环境的启动脚本并更新快捷方式。
+原使用环境的应用安装在 `G:\codex\MusicScore`。Windows 凭据服务名称仍保留 `ScoreDesk`，避免丢失已有 API 密钥。`CreateShortcut.ps1` 可重新生成启动快捷方式；之后若移动安装目录，需要重新修复运行环境的启动脚本并更新快捷方式。
 
 ## 本机路径与导出
 
-设置中的“应用安装目录”显示 MusicScore 实际安装位置，旁边的文件夹按钮可打开该目录。“乐谱导出位置”与它并排，默认是 `G:\codex\MusicScore\exports`；可点击文件夹按钮选择其他目录，也可输入完整路径，保存后生效。
+设置中的“应用安装目录”显示 MusicScore 实际安装位置，旁边的文件夹按钮可打开该目录。“乐谱导出位置”与它并排，原使用环境默认是 `G:\codex\MusicScore\exports`；可点击文件夹按钮选择其他目录，也可输入完整路径，保存后生效。
 
 点击曲谱上的 MusicXML、MIDI、MSCZ、PDF 或当前谱式的 PDF 入口，文件直接写入默认导出位置，并提示实际路径。目录按曲名、项目 ID 和版本组织。重复导出会添加编号，不覆盖已有文件。曲谱库、原始输入与版本数据仍保存在安装目录的 `library/` 中，改变导出位置不会移动曲谱库。
 
